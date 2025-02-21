@@ -1,0 +1,24 @@
+{
+    "userLoginSuccess": {
+      "username": "Ana@12",
+      "password": "ana.123"
+    },
+    "userLoginFail": {
+      "username": "Ana",
+      "password": "ana.1234"
+    },
+    "userRegisterSuccess": {
+      "firstName": "Ana",
+      "lastName" : "Silva",
+      "username": "Ana@12",
+      "password": "ana.123",
+      "confirmPassord" : "ana.123"
+    },
+    "userRegisterFail": {
+      "firstName": "Ana",
+      "lastName" : "Silva",
+      "username": "Ana@12",
+      "password": "ana.123",
+      "confirmPassord" : "ana.12345"
+    }
+}
