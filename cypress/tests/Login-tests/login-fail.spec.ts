@@ -3,11 +3,11 @@ import SignInPage from '../pages/signInPage'
 
 const signInPage = new SignInPage()
 
-describe('Real World App Login Tests', () => {
+describe('Login with invalid credentials', () => {
 
   it('Login - Fail', () => {
     signInPage.accessSignInPage();
-    signInPage.login(userData.userLoginFail.username, userData.userLoginFail.password);
+    signInPage.loginDetails(userData.userLoginFail.username, userData.userLoginFail.password);
     signInPage.invalidCredentialCheck();
   })
 

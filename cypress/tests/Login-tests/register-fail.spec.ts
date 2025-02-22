@@ -1,26 +1,16 @@
-import { use } from 'chai'
 import userData from '../fixtures/userData.json'
-import SignInPage from '../pages/signInPage'
 import SignUpPage from '../pages/signUpPage'
 
-const signInPage = new SignInPage()
 const signUpPage = new SignUpPage()
 
-describe('Real World App Login Tests', () => {
+describe('Register user with invalid/incomplete information', () => {
 
     it('Register - Fail', () => {
-      signInPage.accessSignInPage();
-      signInPage.accessSignUpPage();
-      signUpPage.signUp(userData.userRegisterFail.firstName, userData.userRegisterFail.lastName, userData.userRegisterFail.username, userData.userRegisterFail.password, userData.userRegisterFail.confirmPassord);
-      signUpPage.signUp(userData.userRegisterFail)
-      
-      
-      
-      
-      
-
-      
-
+      signUpPage.accessSignUpPage();
+      signUpPage.signUpDetails(userData.userRegisterFail.firstName, userData.userRegisterFail.lastName, userData.userRegisterFail.username, userData.userRegisterFail.password, userData.userRegisterFail.confirmPassord);
+      signUpPage.invalidCredentialCheck();
+      signUpPage.signUpNewTry(userData.userRegisterFail.firstName, userData.userRegisterFail.lastName, userData.userRegisterFail.password, userData.userRegisterSuccess.confirmPassord);
+      signUpPage.emptyFieldCheck();
     })
   
   })
