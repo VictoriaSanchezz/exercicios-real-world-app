@@ -1,0 +1,11 @@
+{
+    "bankAccountInfo": {
+        "bankName": "AnaPay",
+        "routingNumber": "044890083",
+        "accountNumber": "000974109283" 
+    },
+    "transactionInfo" : {
+        "addAmount": "1000",
+        "addNote": "Here's the money you borrowed me a week ago. Thank you!"
+    }
+}

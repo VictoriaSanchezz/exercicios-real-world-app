@@ -12,4 +12,3 @@ describe('Login with invalid credentials', () => {
   })
 
 })
-

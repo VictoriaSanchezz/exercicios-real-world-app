@@ -7,8 +7,7 @@ class SignInPage {
             usernameField: "[name='username']",
             passwordField: "[name='password']",
             signInButton: "[type='submit']",
-            wrongCredentialAlert: "[role='alert']",
-            boardPageCheck: "[data-test='user-onboarding-dialog-title']"
+            wrongCredentialAlert: "[role='alert']"
         }
 
         return selectors
@@ -28,10 +27,6 @@ class SignInPage {
 
     invalidCredentialCheck() { 
         cy.get(this.selectorsList().wrongCredentialAlert).should('be.visible')
-    }
-
-    boardPageCheck() {
-        cy.get(this.selectorsList().boardPageCheck).should('be.visible')
     }
 
 }
