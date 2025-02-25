@@ -7,5 +7,11 @@
     "transactionInfo" : {
         "addAmount": "1000",
         "addNote": "Here's the money you borrowed me a week ago. Thank you!"
+    },
+    "newUserBankAccountInfo": {
+        "bankName": "JoePay",
+        "routingNumber": "095431008",
+        "accountNumber": "032054780002"
     }
+    
 }

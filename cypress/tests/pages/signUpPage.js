@@ -59,6 +59,14 @@ class SignUpPage {
         cy.get(this.selectorsList().confirmPasswordField).type(confirmPassword)
     }
 
+    newUserSignUpDetails(firstName, lastName, username, password, confirmPassword) {
+        cy.get(this.selectorsList().firstNameField).type(firstName)
+        cy.get(this.selectorsList().lastNameField).type(lastName)
+        cy.get(this.selectorsList().usernameField).type(username)
+        cy.get(this.selectorsList().passwordField).type(password)
+        cy.get(this.selectorsList().confirmPasswordField).type(confirmPassword)
+    }
+
 }
 
 export default SignUpPage

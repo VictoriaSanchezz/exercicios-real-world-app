@@ -20,6 +20,13 @@
       "username": "Ana@12",
       "password": "ana.123",
       "confirmPassord" : "ana.12345"
+    },
+    "newUser": {
+      "firstName": "Joe",
+      "lastName": "Martin",
+      "username": "Joe@10",
+      "password": "joe.321",
+      "confirmPassord": "joe.321"
     }
     
 }

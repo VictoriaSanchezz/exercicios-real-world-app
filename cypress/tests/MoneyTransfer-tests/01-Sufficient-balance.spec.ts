@@ -13,8 +13,8 @@ describe('Money transfer with sufficient balance', () => {
     signInPage.loginDetails(userData.userLoginSuccess.username, userData.userLoginSuccess.password);
     homePage.homePageCheck();
 
-      // Once you log in with user and create a bank account for the first time, no need to verify/create again. Unless you create a new user or new bank;
-    // homePage.createBankAccount(bankAccount.bankAccountInfo.bankName, bankAccount.bankAccountInfo.routingNumber, bankAccount.bankAccountInfo.accountNumber);
+        // Once you log in with user and create a bank account for the first time, no need to verify/create everytime you log in that day. Unless you create a new user or new bank;
+    // homePage.createBankAccount(bankAccountData.bankAccountInfo.bankName, bankAccountData.bankAccountInfo.routingNumber, bankAccountData.bankAccountInfo.accountNumber);
     
     homePage.newTransaction(bankAccountData.transactionInfo.addAmount, bankAccountData.transactionInfo.addNote);
   })

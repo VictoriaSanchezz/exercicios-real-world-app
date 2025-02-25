@@ -8,15 +8,15 @@ const homePage = new HomePage()
 
 describe('Money transfer with insufficient balance', () => {
 
-//   it('Insufficient balance', () => {
-//     signInPage.accessSignInPage();
-//     signInPage.loginDetails(userData.userLoginSuccess.username, userData.userLoginSuccess.password);
-//     homePage.homePageCheck();
+  it('Insufficient balance', () => {
+    signInPage.accessSignInPage();
+    signInPage.loginDetails(userData.userLoginSuccess.username, userData.userLoginSuccess.password);
+    homePage.homePageCheck();
 
-//       // Once you log in with user and create a bank account for the first time, no need to verify/create again. Unless you create a new user or new bank;
-//     // homePage.createBankAccount(bankAccount.bankAccountInfo.bankName, bankAccount.bankAccountInfo.routingNumber, bankAccount.bankAccountInfo.accountNumber);
+      // Once you log in with user and create a bank account for the first time, no need to verify/create again. Unless you create a new user or new bank;
+    // homePage.createBankAccount(bankAccount.bankAccountInfo.bankName, bankAccount.bankAccountInfo.routingNumber, bankAccount.bankAccountInfo.accountNumber);
     
-//     homePage.newTransaction(bankAccountData.transactionInfo.addAmount, bankAccountData.transactionInfo.addNote);
-//   })
+    homePage.newTransaction(bankAccountData.transactionInfo.addAmount, bankAccountData.transactionInfo.addNote);
+  })
 
 })

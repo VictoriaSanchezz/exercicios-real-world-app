@@ -13,7 +13,9 @@ class HomePage {
             amountField: "[placeholder='Amount']",
             addNoteField: "[placeholder='Add a note']",
             payButton: "[data-test='transaction-create-submit-payment']",
-            transactionSuccessAlert: "[data-test='alert-bar-success']"
+            transactionSuccessAlert: "[data-test='alert-bar-success']",
+            topboardMineButton: "[role='tab']",
+            transactionsHistoryPage: ".TransactionList-paper"
         }
 
         return selectors
@@ -39,6 +41,14 @@ class HomePage {
         cy.get(this.selectorsList().addNoteField).type(addNote)
         cy.get(this.selectorsList().payButton).click()
         cy.get(this.selectorsList().transactionSuccessAlert).should('be.visible')
+    }
+
+    accessTransactionsHistory() {
+        cy.get(this.selectorsList().topboardMineButton).eq(2).click()
+    }
+
+    transactionsHistoryCheck() {
+        cy.get(this.selectorsList().transactionsHistoryPage).contains('No Transactions').should('be.visible')
     }
 }
 
